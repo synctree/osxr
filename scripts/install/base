@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Get sudo access in advanced
-sudo echo "Thanks for giving sudo access in advanced"
+sudo echo "Thanks for giving sudo access in advanced" && 
 
 # Homebrew
 /usr/bin/ruby -e "$(/usr/bin/curl -fsSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"
