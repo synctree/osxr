@@ -1,7 +1,11 @@
-curl get.pow.cx/uninstall.sh | sh
-rm -rf ~/.rvm
 rm -rf ~/.aliases
 rm -rf ~/.exports
 rm -rf ~/.gemrc
 rm -rf ~/.gitconfig
-rm -rf ~/.
+rm -rf ~/.irbrc
+rm -rf ~/.vimrc
+rm -rf ~/.profile
+rvm implode
+curl get.pow.cx/uninstall.sh | sh
+touch ~/.bash_profile
+source ~/.bash_profile
