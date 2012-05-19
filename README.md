@@ -16,6 +16,7 @@ This is still in development and currently assumes you have a vanilla installati
 
 ## TODO
   
+  * Extract relative components from clifu
   * Backup configuration files if they already exist
   * Uninstall script is incomplete
 

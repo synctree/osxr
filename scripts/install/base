@@ -12,7 +12,7 @@ brew install https://raw.github.com/synctree/osxr/develop/homebrews/apple-gcc42.
 
 # Dependencies
 sudo -v 
-brew install ack autoconf automake colordiff curl git git-flow libmemcached libxml2 libxslt lzlib lzo memcached pcre readline rsync sqlite v8 wget xz
+brew install ack autoconf automake colordiff curl git git-flow libmemcached libxml2 libxslt lzlib lzo memcached pcre readline sqlite v8 wget xz
 brew tap homebrew/dupes
 brew install homebrew/dupes/libiconv
 
