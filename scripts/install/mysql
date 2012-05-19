@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-sudo -v
 brew install https://raw.github.com/synctree/osxr/develop/homebrews/mysql/5.1.59/mysql.rb
 curl -L https://raw.github.com/synctree/osxr/develop/config/my.cnf > /usr/local/etc/my.cnf
 mysql_install_db --verbose --user=`whoami` --basedir="/usr/local/Cellar/mysql/5.1.59" --datadir=/usr/local/var/mysql --tmpdir=/tmp

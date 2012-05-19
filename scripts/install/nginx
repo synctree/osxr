@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-sudo -v
 brew install https://raw.github.com/synctree/osxr/develop/homebrews/nginx/1.2.0/nginx.rb
 curl -L https://raw.github.com/synctree/osxr/develop/config/nginx.conf > /usr/local/etc/nginx/nginx.conf
 sed -i '' -e 's?#<HOME>?'"$HOME"'?' /usr/local/etc/nginx/nginx.conf

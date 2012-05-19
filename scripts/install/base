@@ -1,35 +1,24 @@
 #!/usr/bin/env bash
 
-# Get sudo access in advanced
-sudo echo "Thanks for giving sudo access in advanced" && 
-
 # Homebrew
 /usr/bin/ruby -e "$(/usr/bin/curl -fsSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"
 
 # GCC
-sudo -v
 brew install https://raw.github.com/synctree/osxr/develop/homebrews/apple-gcc42.rb
 
 # Dependencies
-sudo -v 
 brew install ack autoconf automake colordiff curl git git-flow libmemcached libxml2 libxslt lzlib lzo memcached pcre readline sqlite v8 wget xz
 brew tap homebrew/dupes
 brew install homebrew/dupes/libiconv
 
 # RVM
-sudo -v 
 curl -L get.rvm.io | bash -s stable
 source ~/.rvm/scripts/rvm
 rvm get head
 
 # Rubies
-sudo -v
 rvm install 1.8.7
-
-sudo -v
 rvm install 1.9.2
-
-sudo -v
 rvm install 1.9.3
 
 # Global RubyGems
