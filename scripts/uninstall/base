@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
+curl get.pow.cx/uninstall.sh | sh
 cd `brew --prefix`
 rm -rf Cellar
 bin/brew prune
-rm -r Library/Homebrew Library/Aliases Library/Formula Library/Contributions 
-test -d Library/LinkedKegs && rm -r Library/LinkedKegs
-rmdir -p bin Library share/man/man1 2> /dev/null
+rm -rf Library/Homebrew Library/Aliases Library/Formula Library/Contributions 
+test -d Library/LinkedKegs && rm -rf Library/LinkedKegs
+rm -rf bin Library share/man/man1
 rm -rf .git
 rm -rf ~/Library/Caches/Homebrew
 rm -rf ~/Library/Logs/Homebrew
@@ -21,6 +22,5 @@ rm -rf ~/.profile
 rm -rf ~/.pow
 rvm implode
 yes
-curl get.pow.cx/uninstall.sh | sh
 touch ~/.bash_profile
 source ~/.bash_profile
