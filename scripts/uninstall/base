@@ -20,6 +20,7 @@ rm -rf ~/.vimrc
 rm -rf ~/.profile
 rm -rf ~/.pow
 rvm implode
+yes
 curl get.pow.cx/uninstall.sh | sh
 touch ~/.bash_profile
 source ~/.bash_profile
