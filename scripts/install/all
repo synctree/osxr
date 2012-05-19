@@ -1,0 +1,4 @@
+curl -L https://raw.github.com/synctree/osxr/develop/scripts/install/base | bash
+curl -L https://raw.github.com/synctree/osxr/develop/scripts/install/nginx | bash
+curl -L https://raw.github.com/synctree/osxr/develop/scripts/install/mysql | bash
+curl -L https://raw.github.com/synctree/osxr/develop/scripts/install/redis | bash
